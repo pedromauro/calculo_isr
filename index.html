@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo ISR</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap-reboot.min.css">
+    <script type="text/javascript" src="librerias/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="librerias/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="librerias/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <link rel="icon" type="imagen/ico" href="img/ico2.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-xs-10">
+                <div class="panel-body">
+                    <p>Sistema de cálculo de ISR</p>
+                    <p>
+                        <img class="img-circle img-responsive center-block" src="img/marca.png" alt="Logo">
+                    </p>
+                    <form action="load.php" method="POST" enctype="multipart/form-data">
+                        <!-- <input type="file" name="archivo">
+                        <br><br> -->
+                        <div class="custom-file">
+                            <!--<input type="file" class="custom-file-input"  name="archivo" lang="es">
+                           <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>  -->
+                           &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-primary" type="file" name="archivo" lang= "es" >
+    
+                        </div>
+                        <br><br>
+                        <div class="align-middle">
+                            <select class="btn btn-primary" id="year" name="year">
+                                <option  value="2020">2020</option> 
+                                <option value="2019">2019</option> 
+                                <option value="2018">2018</option>
+
+                             </select> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary" type="submit" name="isr">Cálculo de ISR</button> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary" type="submit" name="isrI">Cálculo inverso de ISR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+
+</html>
